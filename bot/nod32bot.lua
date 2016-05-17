@@ -246,18 +246,18 @@ function create_config( )
     "version"
     },
 	    sudo_users = {132855224},--Sudo users
-    disabled_channels = {},
+    disabled_channels = {@channel_telepersian},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
 https://github.com/BH-YAGHI/NOD32-BOT.git
 
-channel : @Nod32team
-sodu : @behrooZyaghi
+channel : @channel_telepersian
+sodu : @lash00900
 ]],
     help_text_realm = [[
 Realm Commands:
 
-!creategroup [Name]
+!ساخت گروه [Name]
 Create a group
 
 !createrealm [Name]
@@ -321,7 +321,7 @@ ch: @Nod32team
 
 ]],
     help_text = [[
-NOD32 Commands list :
+telepersian Commands list :
  
 1-banhammer list ^
  
@@ -518,7 +518,7 @@ NOD32 Commands list :
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
-channel: @Nod32Team
+channel: @channel_telepersian
 
 G00D LUCK ^_^
 ]]
@@ -609,3 +609,29 @@ our_id = 0
 now = os.time()
 math.randomseed(now)
 started = false
+)
+end
+
+function on_our_id (id)
+  our_id = id
+end
+
+function on_user_update (user, what)
+  --vardump (user)
+end
+
+function on_chat_update (chat, what)
+
+end
+
+function on_secret_chat_update (schat, what)
+  --vardump (schat)
+end
+
+function on_get_difference_end ()
+end
+
+-- Enable plugins in config.json
+function load_plugins()
+  for k, v in pairs(_config.enabled_plugins) do
+    print(
