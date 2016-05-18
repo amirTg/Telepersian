@@ -1,15 +1,15 @@
 do
 
 function run(msg, matches)
-  return 'NOD32-BOT v8'.. VERSION .. [[ 
+  return ' telepersianv1'.. VERSION .. [[ 
  
-  Developer : @Behroozyaghi
+  Developer : @lash00900
   
-  Channel : @Nod32team
+  Channel : @channel_telepersian
   
-  Open git : https://github.com/BH-YAGHI/NOD32-BOT.git
+  Open git : https://github.com/amirtg/Telepersian.git
   
-  NOD32 VERSION 8
+  telepersian VERSION 81
   
   All rights reserved.
   __________________]]
