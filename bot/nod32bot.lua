@@ -328,7 +328,7 @@ telepersian Commands list :
 !kick [username|id]
 (کیک کردن شخص (حتی با ریپلی)
 
-!ban [ username|id]
+!ban,بن [ username|id]
 (بن کردن افراد (حتی با ریپلی)
 
 !unban [id]
